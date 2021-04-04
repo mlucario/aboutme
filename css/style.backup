@@ -1,0 +1,117 @@
+<svg id="MEAN" xmlns="http://www.w3.org/2000/svg" width="74" height="68" viewBox="0 0 74 68">
+  <g id="Ellipse_7" data-name="Ellipse 7" fill="#fff" stroke="#000" stroke-width="3">
+    <ellipse cx="37" cy="34" rx="37" ry="34" stroke="none"/>
+    <ellipse cx="37" cy="34" rx="35.5" ry="32.5" fill="none"/>
+  </g>
+  <text id="M" transform="translate(8 41)" fill="#16a085" font-size="20" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">M</tspan></text>
+  <text id="E" transform="translate(26 41)" fill="#f39c12" font-size="20" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">E</tspan></text>
+  <text id="A" transform="translate(37 41)" fill="#c0392b" font-size="20" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">A</tspan></text>
+  <text id="N" transform="translate(52 41)" fill="#2ecc71" font-size="20" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">N</tspan></text>
+</svg>
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+    color: red;
+  min-height: 100vh;
+  width: 100%;
+  /* 
+  background-image: linear-gradient(
+    rgba(4, 9, 30, 0.7),
+    rgba(4, 9, 30, 0.7)),
+    url(../assets/images/bg.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+   */
+   background-color: #fff;
+}
+nav {
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 80px;
+    
+}
+.nav-links {
+    flex: 1;
+    text-align: right    
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.text-box h1 {
+    font-size: 64px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 16px;
+}
+.hero-btn {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+
+@media (max-width : 700px){
+    .text-box h1 {
+        font-size: 34px;
+    }
+}

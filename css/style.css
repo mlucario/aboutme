@@ -1,0 +1,40 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+header p {
+  margin: 0;
+  padding: 0;
+}
+
+header .header-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 15px;
+}
+
+header .header-body .header-name {
+  text-transform: uppercase;
+}
+
+header .header-body .header-title {
+  text-transform: uppercase;
+}
+
+header .header-body .header-img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
